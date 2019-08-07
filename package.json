@@ -10,12 +10,12 @@
     "url": "https://github.com/path-of-dev/untrusive"
   },
   "scripts": {
-    "prepublishOnly": "npm run build &&  npm shrinkwrap --dev",
+    "prepublishOnly": "npm run build",
     "publishCmd": "npm publish --access public",
     "umd-build": "rollup ./dist/module/index.js --format umd -m --name 'Untrusive' --file ./dist/umd/untrusive.js",
     "umd-minify": "uglifyjs ./dist/umd/untrusive.js -o ./dist/umd/untrusive.min.js --source-map url",
     "module-build": "tsc",
-    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./demo",
+    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./demo && npm shrinkwrap --dev",
     "demo": "http-server ./demo"
   },
   "keywords": [

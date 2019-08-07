@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/untrusive.min.js"></script>
+</head>
+<body>
+
+    <button id="toggle">Toggle</button>
+
+    <button id="start">Start</button>
+
+    <button id="stop">Stop</button>
+
+    <script>
+
+        var untrusive = new Untrusive({
+          bgColor: "black",
+          barColor: "blue"
+        });
+
+        document.getElementById("toggle").addEventListener("click", function () {
+          untrusive.toggle();
+        })
+
+        document.getElementById("start").addEventListener("click", function () {
+          untrusive.start();
+        })
+
+        document.getElementById("stop").addEventListener("click", function () {
+          untrusive.stop();
+        })
+
+    </script>
+
+</body>
+</html>

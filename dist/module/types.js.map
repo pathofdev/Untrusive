@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../../src/types.ts"],"names":[],"mappings":"","sourcesContent":["\nexport interface UntrusiveOptions {\n  bgColor: string;\n  barColor: string;\n  height?: number;\n}\n"]}

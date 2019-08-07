@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Untrusive Demo</title>
+    <script src="/untrusive.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        body > * {
+            margin-bottom: 30px;
+        }
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 135px;
+            margin-right: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Untrusive Demo</h1>
+
+    <div>
+        <label>Background Color</label>
+        <input id="bgColor" type="text" value="#ed3c28"/>
+    </div>
+    <div>
+        <label>Bar Color</label>
+        <input id="barColor" type="text" value="#ff9e8d"/>
+    </div>
+
+    <button id="init">Init</button>
+
+    <button id="toggle">Toggle</button>
+
+    <button id="start">Start</button>
+
+    <button id="stop">Stop</button>
+
+    <script>
+
+        var untrusive = new Untrusive({
+          bgColor: "#ed3c28",
+          barColor: "#ff9e8d"
+        });
+
+        document.getElementById("init").addEventListener("click", function () {
+          var bgColor = document.getElementById("bgColor").value;
+          var barColor = document.getElementById("barColor").value;
+          untrusive.init({
+            bgColor: bgColor,
+            barColor: barColor
+          });
+        })
+
+        document.getElementById("toggle").addEventListener("click", function () {
+          untrusive.toggle();
+        })
+
+        document.getElementById("start").addEventListener("click", function () {
+          untrusive.start();
+        })
+
+        document.getElementById("stop").addEventListener("click", function () {
+          untrusive.stop();
+        })
+
+    </script>
+
+</body>
+</html>

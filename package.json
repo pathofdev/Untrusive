@@ -16,7 +16,7 @@
     "umd-minify": "uglifyjs ./dist/umd/untrusive.js -o ./dist/umd/untrusive.min.js --source-map url",
     "module-build": "tsc",
     "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./example",
-    "demo": "http-server ./example"
+    "demo": "http-server ./demo"
   },
   "keywords": [ "css loader", "loader", "indeterminate loading bar", "indeterminate loader" ],
   "author": "pathof.dev",

@@ -2,6 +2,8 @@
 
 > This project is built by [path_of_dev](https://pathof.dev)
 
+[View demo](https://untrusive.netlify.com)
+
 Untrusive is a indeterminate loading bar for websites and web applications. It features:
 
 - Zero-dependencies

@@ -15,7 +15,7 @@
     "umd-build": "rollup ./dist/module/index.js --format umd -m --name 'Untrusive' --file ./dist/umd/untrusive.js",
     "umd-minify": "uglifyjs ./dist/umd/untrusive.js -o ./dist/umd/untrusive.min.js --source-map url",
     "module-build": "tsc",
-    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./example",
+    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./demo",
     "demo": "http-server ./demo"
   },
   "keywords": [
@@ -25,7 +25,7 @@
     "indeterminate loader"
   ],
   "author": "pathof.dev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "rollup": "^1.19.3",
     "tslint": "^5.18.0",

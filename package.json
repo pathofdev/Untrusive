@@ -1,6 +1,6 @@
 {
   "name": "untrusive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/umd/untrusive.min.js",
   "module": "./dist/module/index.js",
@@ -18,7 +18,12 @@
     "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./example",
     "demo": "http-server ./demo"
   },
-  "keywords": [ "css loader", "loader", "indeterminate loading bar", "indeterminate loader" ],
+  "keywords": [
+    "css loader",
+    "loader",
+    "indeterminate loading bar",
+    "indeterminate loader"
+  ],
   "author": "pathof.dev",
   "license": "ISC",
   "devDependencies": {

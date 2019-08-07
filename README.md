@@ -1,4 +1,6 @@
-# Untrusive
+# ⌛ Untrusive
+
+> This project is built by [path_of_dev](https://pathof.dev)
 
 Untrusive is a indeterminate loading bar for websites and web applications. It features:
 
@@ -8,8 +10,6 @@ Untrusive is a indeterminate loading bar for websites and web applications. It f
 - No CSS import required
 - Safe to import server-side
 - Includes TypeScript definitions
-
-This project is built by [path_of_dev](https://pathof.dev).
 
 ## Installing
 

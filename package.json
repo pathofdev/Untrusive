@@ -15,7 +15,7 @@
     "umd-build": "rollup ./dist/module/index.js --format umd -m --name 'Untrusive' --file ./dist/umd/untrusive.js",
     "umd-minify": "uglifyjs ./dist/umd/untrusive.js -o ./dist/umd/untrusive.min.js --source-map url",
     "module-build": "tsc",
-    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./example",
+    "build": "rm -rf dist && npm run module-build && npm run umd-build && npm run umd-minify && cp ./dist/umd/untrusive.min.js ./example && npm shrinkwrap --dev",
     "example": "http-server ./example"
   },
   "author": "pathof.dev",
